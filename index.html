@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>segunda aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/telefonos.jpg','imagenes/tefut.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> TELEFONIA CELULAR</h1>
+</div>
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> ¿Que es un telefono celular?</h2>
+<p>Se muestra la informacion</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia de la Telefonia Celular</h2>
+<p>Se muestra la Historia de la Telefonia Celular</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Clasificacion de la Telefonia Celular</h2>
+<p>Muestra la Clasificacion de la Telefonia Celular</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Compañias que Manejan la Telefonia Celular en Mexico</h2>
+<p>Muestra las Compañias que Manejan la Telefonia Celular en Mexico </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Telefonos Celulares del Futuro</h2>
+<p> Muestra los Telefonos Celulares del Futuro </p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/logo.png" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion Dos</h4>
+<h4>Aurora Garcia Hernandez</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>¿Que es un telefono celular?</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefonos Celulares</h1>
+<div>
+<br>
+</div>
+<div>
+<center>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/telefonos.jpg',1)"><img src="imagenes/cel.jpg" width="550" height="308" id="Image13"></a>
+</center>
+</div>
+</div>
+</div>
+<div data-role="content" align="center">
+<div>
+Un teléfono celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara fotográfica, agenda, acceso a internet, reproducción de video e incluso GPS y reproductor mp3.
+</div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Dos, AGH.</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Historia de la Telefonia Celular</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+La historia de la telefonía celular se remonta a los años 40s, cuando motivada por la segunda guerra mundial, la empresa Motorola desarrollo un teléfono móvil llamado Handie Talkie H12-16, este aparato usaba ondas de radio que para ese momento no superaban los 60 MHz.
+Martin Cooper fue el pionero en esta tecnología, a él se le considera como "el padre de la telefonía celular" al introducir el primer radioteléfono, en 1973, en Estados Unidos, mientras trabajaba para Motorola; pero no fue hasta 1979 cuando aparecieron los primeros sistemas comerciales en Tokio, Japón por la compañía NTT. 
+En 1981, los países nórdicos introdujeron un sistema celular similar a AMPS (Advanced Mobile Phone System). Por otro lado, en Estados Unidos, gracias a que la entidad reguladora de ese país adoptó reglas para la creación de un servicio comercial de telefonía celular, en 1983 se puso en operación el primer sistema comercial en la ciudad de Chicago. 
+
+Con ese punto de partida, en varios países se diseminó la telefonía celular como una alternativa a la telefonía convencional inalámbrica. La tecnología tuvo gran aceptación, por lo que a los pocos años de implantarse se empezó a saturar el servicio. En ese sentido, hubo la necesidad de desarrollar e implantar otras formas de acceso múltiple al canal y transformar los sistemas analógicos a digitales, con el objeto de darle cabida a más usuarios. Para separar una etapa de la otra, la telefonía celular se ha caracterizado por contar con diferentes generaciones.</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Historia del Telefono Celular</h1>
+<div>
+<br>
+</div>
+<div>
+<center><img src="imagenes/historia.jpg" width="25%" height="45%"></center>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Dos, AGH</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Clasificacion de la Telefonia Celular</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+   <h2>Gama Baja:</h2> Se identifican a aquellos teléfonos móviles que cuentan si bien cuentan con una cámara de fotos, esta es de baja calidad. Además de esto, incluyen un reproductor de música aunque de los más básicos, al igual que la memoria que presentan, que es bastante limitada. Los celulares de baja gama tampoco incluyen pantalla táctil y ésta suele ser de tamaño reducido. La conexión a Internet que ofrecen es bastante limitada y no cuentan con 3G. A pesar de que estos dispositivos son bastante limitados, siguen siendo muy utilizados por los usuarios ya que ofrecen servicios que, para quienes no son muy exigentes o lo usan de forma esporádica,  satisfacen las necesidades que estos usuarios pueden tener, principalmente la de mantenerse comunicados con otros usuarios.
+</div>
+  </div>
+   <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefonos de Gama Baja</h1>
+<div>
+<br>
+</div>
+<div>
+<center><img src="imagenes/gaba.jpg" width="58%" height="37%"></center>
+</div>
+</div>
+</div>
+ <div data-role="content" align="center">
+  <div>
+<h2>Gama Media:</h2>Estos celulares, en cambio, ofrecen pantallas un poco más grandes que los anteriores, por lo que su calidad es bastante mayor y resultan mucho más prácticas para los usuarios. Además de esto, la cámara de fotos que tienen es de mayor calidad, al igual que los reproductores de MP3. Estos teléfonos móviles también ofrecen juegos, mensaje de texto, calculadora y distintas aplicaciones. Con respecto a la conexión a Internet, permite navegar con HTML y puede ocurrir que algunos modelos cuenten con 3G.
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefonos de Gama Media</h1>
+<div>
+<br>
+</div>
+<div>
+<center><img src="imagenes/game.jpg" width="57%" height="37%"></center>
+</div>
+</div>
+</div>
+<div data-role="content" align="center">
+  <div>
+  <h2>Gama Alta</h2> Ofrecen varias de las opciones antes mencionadas, pero con mejor calidad, como ocurre con la cámara de fotos o el reproductor de música. Además de esto, la conexión a Internet suele ser de mejor calidad y velocidad y ofrecen 3G ó 4G. Además, cuentan con Bluetooth y como permiten conexión Wi Fi muchas veces no se venden con planes de Internet.
+  </div>
+  </div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefonos de Gama Alta</h1>
+<div>
+<br>
+</div>
+<div>
+<center><img src="imagenes/gaal.jpg" width="58%" height="33%"></center>
+</div>
+</div>
+</div>
+   <div data-role="footer" data-theme="b" data-position="fixed">
+   <h4>Aplicacion Dos, AGH</h4>
+   </div>
+</div>
+   
+   
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Compañias que Manejan la Telefonia Celular en Mexico</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <h3>*Telcel  </h3>
+  <h3>*Movistar  </h3>
+  <h3>*Iusacell  </h3>
+  <h3>*Nextel</h3>
+  <h3>*Axtel</h3>
+  <h3>*Unefon</h3>
+ </div>
+ </div>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Compañias de Telefonia Celular en Mexico</h1>
+<div>
+<br>
+</div>
+<div>
+<center><img src="imagenes/telcelmex.png" width="64%" height="15%"></center>
+<center><img src="imagenes/axtel.png" width="36%" height="9%"></center>
+</div>
+</div>
+</div>
+  
+   <div data-role="footer" data-theme="b" data-position="fixed">
+   <h4>Aplicacion Dos, AGH</h4>
+   </div>
+</div>
+    
+   <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Telefonos Celulares del Futuro</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefonos del Futuro</h1>
+<div>
+<br>
+</div>
+<div>
+<center><img src="imagenes/tfut.png" width="35%" height="23%"></center>
+</div>
+</div>
+</div>
+  <div data-role="content" align="center">
+    <div>
+      Los celulares se han convertido en parte esencial de nuestra vida cotidiana, tanto así que no concebimos salir sin ellos y menos convivir sin las nuevas aplicaciones que estos dispositivos traen.
+ 
+Actualmente existen varios prototipos de celulares que aún no han salido al mercado, pero resultan tan espectaculares que sin duda, vale la pena conocer.
+    </div>
+       <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefonos del Futuro</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/telf.jpg" width="23%" height="10%"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/tefut.jpg',1)">  <img src="imagenes/telfut.jpg" alt="" width="389" height="285" id="Image12"><img src="imagenes/celfu.jpg" width="27%" height="13%"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/tefut.jpg',1)"></a></div>
+</div>
+</div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+      <h4>Aplicacion Dos, AGH</h4>
+    </div>
+</div>  
+</body>
+</html>
